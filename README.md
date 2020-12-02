@@ -3,3 +3,4 @@
 These are my solutions to the https://adventofcode.com/2020 challenges:
 
 - [Day One](/src/1)
+- [Day Two](/src/2)
