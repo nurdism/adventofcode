@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "one": "npm run nodemon -- ./src/1/index.ts",
-    "two": "npm run nodemon -- ./src/2/index.ts",
+    "1": "npm run nodemon -- ./src/1/index.ts",
+    "2": "npm run nodemon -- ./src/2/index.ts",
     "nodemon": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node'",
     "lint": "eslint src/**/*.ts",
     "clean": "rimraf package-lock.json *.tsbuildinfo **/{dist,node_modules}/",
