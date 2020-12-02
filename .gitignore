@@ -1,0 +1,39 @@
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log/Temp files
+.tmp/
+tmp/
+*.tmp
+.logs/
+logs/
+*.log
+core
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# local env files
+*.env
+.env.local
+.env.*.local
+
+# Node modules
+node_modules
+package-lock.json
+
+# TypeScript incremental compilation cache
+*.tsbuildinfo
+
+
+
