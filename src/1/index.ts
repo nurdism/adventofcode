@@ -8,7 +8,7 @@ const raw = fs.readFileSync(path.resolve(__dirname, 'input.txt'))
 
 // parse input
 for (const line of raw.toString().split(/\n/)) {
-  if (line.match(/\d/)) {
+  if (/^\d+$/.test(line)) {
     data.push(parseInt(line))
   }
 }
