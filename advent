@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ -f .env ]; then
+  source <(grep -v '^#' .env | sed -E 's|^(.+)=(.*)$|: ${\1=\2}; export \1|g')
+fi
+
+if [ ! -d node_modules ]; then
+  npm install
+fi
+
+case $1 in
+  dev) npm run nodemon -- ./src/${1:-day-01}/index.ts;;
+  *) npm run ts-node -- ./src/${1:-day-01}/index.ts;;
+esac
