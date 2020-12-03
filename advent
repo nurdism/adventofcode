@@ -9,6 +9,6 @@ if [ ! -d node_modules ]; then
 fi
 
 case $1 in
-  dev) npm run nodemon -- ./src/${1:-day-01}/index.ts;;
+  dev) npm run nodemon -- ./src/${2:-day-01}/index.ts;;
   *) npm run ts-node -- ./src/${1:-day-01}/index.ts;;
 esac

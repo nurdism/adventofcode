@@ -6,6 +6,7 @@ These are my solutions to the https://adventofcode.com/2020 challenges written i
 
 - [Day One](/src/day-01)
 - [Day Two](/src/day-02)
+- [Day Three](/src/day-03)
 
 ### Running solutions
 
