@@ -27,7 +27,7 @@ utils
   .getInput('1')
   .then((raw) => {
     const data: number[] = []
-    for (const line of raw.toString().split(/\n/)) {
+    for (const line of raw.split(/\n/)) {
       if (/^\d+$/.test(line)) {
         data.push(parseInt(line))
       }

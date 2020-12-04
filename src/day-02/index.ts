@@ -43,7 +43,7 @@ utils
   .then((raw) => {
     const data: Data[] = []
     const regex = /(\d{1,2})-(\d{1,2})\s([a-z]):\s([a-z]*)/i
-    for (const line of raw.toString().split(/\n/)) {
+    for (const line of raw.split(/\n/)) {
       const parts = line.match(regex)
       if (parts.length < 4) {
         continue

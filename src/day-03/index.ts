@@ -36,7 +36,7 @@ utils
   .getInput('3')
   .then((raw) => {
     const data: Array<string[]> = []
-    for (const line of raw.toString().split(/\n/)) {
+    for (const line of raw.split(/\n/)) {
       if (/\.|\#/i.test(line)) {
         data.push(line.split(''))
       }
